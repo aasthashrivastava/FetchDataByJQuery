@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <button>Get Table</button>
+    <button id="sortButton">Sort</button>
+    <select id="filterArea">
+        <option value="">All Area</option>
+    </select>
+    <select id="groupBy">
+        <option value="">Group By</option>
+        <option value="city">Group By City</option>
+        <option value="company">Group By Company</option>
+    </select>
+
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Id <select class="sortOrder">
+                        <option value="desc">descending</option>
+                        <option value="asc">ascending</option>
+                    </select></th>
+                <th>Name
+                    <select class="sortOrder">
+                        <option value="desc">Z to A</option>
+                        <option value="asc">A to Z</option>
+                    </select>
+                </th>
+                <th>Username
+                    <select class="sortOrder">
+                        <option value="desc">Z to A</option>
+                        <option value="asc">A to Z</option>
+                    </select>
+                </th>
+                <th>Email
+                    <select class="sortOrder">
+                        <option value="desc">Z to A</option>
+                        <option value="asc">A to Z</option>
+                    </select>
+                </th>
+                <th>City
+                    <select class="sortOrder">
+                        <option value="desc">Z to A</option>
+                        <option value="asc">A to Z</option>
+                    </select>
+                </th>
+                <th>Street
+                    <select class="sortOrder">
+                        <option value="desc">Z to A</option>
+                        <option value="asc">A to Z</option>
+                    </select>
+                </th>
+                <th>Zipcode
+                    <select class="sortOrder">
+                        <option value="desc">Z to A</option>
+                        <option value="asc">A to Z</option>
+                    </select>
+                </th>
+                <th>Phone
+                    <select class="sortOrder">
+                        <option value="desc">Z to A</option>
+                        <option value="asc">A to Z</option>
+                    </select>
+                </th>
+                <th>Website
+                    <select class="sortOrder">
+                        <option value="desc">Z to A</option>
+                        <option value="asc">A to Z</option>
+                    </select>
+                </th>
+                <th>Company
+                    <select class="sortOrder">
+                        <option value="desc">Z to A</option>
+                        <option value="asc">A to Z</option>
+                    </select>
+                </th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+    <script src="functions.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
